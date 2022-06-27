@@ -22,3 +22,12 @@ scores = input().split()
 scores = list(map(int, scores))
 
 # Condition check
+selected = scores[inputline[1]]
+
+output = len([i for i in scores if i > selected])
+
+if (selected):
+	output += len([i for i in scores if i == selected])
+
+print(output)
+
